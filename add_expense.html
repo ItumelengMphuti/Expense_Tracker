@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/add.css">
+    <title>Expense Tracker - Add Expense</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <h2>Expense Tracker</h2>
+        </a>
+        <div class="nav-links">
+            <a href="edit_expense.html">Edit Expenses</a>
+            <a href="view_expense.html">View Expenses</a>
+        </div>
+    </header>
+    <hr>
+    <section>
+        <h3>Add New Expense</h3>
+        <form>
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date" required>
+            
+            <label for="expense_name">Expense Name: </label>
+            <input type="text" name="expense_name" id="expense_name" required>
+            
+            <label for="amount">Amount: </label>
+            <input type="number" name="amount" id="amount" required>
+            
+            <label for="category">Category: </label>
+            <select name="category" id="category" required>
+                <option value="Noselection" selected>No Selection</option>
+                <option value="Food">Food</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+
+            <button>Add Expense</button>
+        </form>
+    </section>
+    <footer>
+        <p>This page was built by Itumeleng M &#10084;</p>
+    </footer>
+</body>
+</html>
